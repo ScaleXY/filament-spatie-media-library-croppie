@@ -16,7 +16,6 @@ document.addEventListener('alpine:init', () => {
         showZoomer: config.showZoomer,
         format: config.format,
         quality: config.quality,
-
         croppie: {},
         init() {
             this.$nextTick(
@@ -53,7 +52,7 @@ document.addEventListener('alpine:init', () => {
                     showZoomer: this.showZoomer,
                     enableResize: false,
                     mouseWheelZoom: 'ctrl',
-                    enforceBoundary: true,
+                    enforceBoundary: false,
                     enableOrientation: true,
                     enableExif: true,
                     format: this.format,
