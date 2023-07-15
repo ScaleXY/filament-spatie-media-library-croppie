@@ -1,6 +1,6 @@
 <?php
 
-namespace JosefBehr\FilamentSpatieMediaLibraryCroppie\Components;
+namespace ScaleXY\FilamentSpatieMediaLibraryCroppie\Components;
 
 use Closure;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;

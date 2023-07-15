@@ -1,6 +1,6 @@
 <?php
 
-namespace JosefBehr\FilamentSpatieMediaLibraryCroppie;
+namespace ScaleXY\FilamentSpatieMediaLibraryCroppie;
 
 use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;

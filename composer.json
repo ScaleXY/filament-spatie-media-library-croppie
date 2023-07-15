@@ -1,5 +1,5 @@
 {
-    "name": "josefbehr/filament-spatie-media-library-croppie",
+    "name": "scalexy/filament-spatie-media-library-croppie",
     "description": "A filament form field for image upload using spatie media library and croppie.js",
     "version": "1.0.4",
     "keywords": [
@@ -13,7 +13,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "JosefBehr\\FilamentSpatieMediaLibraryCroppie\\": "src/"
+            "ScaleXY\\FilamentSpatieMediaLibraryCroppie\\": "src/"
         }
     },
     "authors": [
@@ -24,6 +24,10 @@
         {
             "name": "Josef Behr",
             "email": "code@josef-behr.de"
+        },
+        {
+            "name": "Athul Raj",
+            "email": "athul@scalexy.com"
         }
     ],
     "require": {
@@ -34,7 +38,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "JosefBehr\\FilamentSpatieMediaLibraryCroppie\\FilamentSpatieMediaLibraryCroppieServiceProvider"
+                "ScaleXY\\FilamentSpatieMediaLibraryCroppie\\FilamentSpatieMediaLibraryCroppieServiceProvider"
             ]
         }
     },
