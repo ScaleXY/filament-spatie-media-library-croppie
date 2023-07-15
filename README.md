@@ -1,7 +1,7 @@
 # Filament Spatie Media Library Croppie Plugin
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/josefbehr/filament-spatie-media-library-croppie.svg?style=flat-square)](https://packagist.org/packages/josefbehr/filament-spatie-media-library-croppie)
-[![Total Downloads](https://img.shields.io/packagist/dt/josefbehr/filament-spatie-media-library-croppie.svg?style=flat-square)](https://packagist.org/packages/josefbehr/filament-spatie-media-library-croppie)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/scalexy/filament-spatie-media-library-croppie.svg?style=flat-square)](https://packagist.org/packages/scalexy/filament-spatie-media-library-croppie)
+[![Total Downloads](https://img.shields.io/packagist/dt/scalexy/filament-spatie-media-library-croppie.svg?style=flat-square)](https://packagist.org/packages/scalexy/filament-spatie-media-library-croppie)
 
 
 ## Installation
@@ -9,14 +9,14 @@
 You can install the package via composer (no need to install croppie as well as its assets are bundled):
 
 ```bash
-composer require josefbehr/filament-spatie-media-library-croppie
+composer require scalexy/filament-spatie-media-library-croppie
 ```
 
 To use outside filament (e.g. with just the forms package), add the js and css to your vite (or mix) config:
 ```html
 @vite([
-    'vendor/josefbehr/filament-spatie-media-library-croppie/resources/dist/js/filament-spatie-media-library-croppie.js',
-    'vendor/josefbehr/filament-spatie-media-library-croppie/resources/dist/css/filament-spatie-media-library-croppie.css',
+    'vendor/scalexy/filament-spatie-media-library-croppie/resources/dist/js/filament-spatie-media-library-croppie.js',
+    'vendor/scalexy/filament-spatie-media-library-croppie/resources/dist/css/filament-spatie-media-library-croppie.css',
     ...
 ])
 ```
@@ -75,16 +75,8 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 ## Acknowldgements
 
-This started as a fork of [nuhel/FilamentCroppie](https://github.com/nuhel/FilamentCroppie), extended and adapted to use spatie/media-library and install croppie via npm.
+This is a fork of [josefbehr/FilamentCroppie](https://github.com/josefbehr/FilamentCroppie), which in turn is a fork of of [nuhel/FilamentCroppie](https://github.com/nuhel/FilamentCroppie) that extended and adapted to use spatie/media-library and install croppie via npm.
 
 ## Changelog
-v1.0.4
-* add imageFormat and imageQuality options/methods
-
-v1.0.3
-* re-bundle croppie assets with plugin assets as it does not seem to work otherwise in some cases
-
-v1.0.0
-* fork `nuhel/filament-croppie` and rename everything, extend spatie plugin form filed
-* remove croppie css and js and re-import them from `node_modules`
-* add viewportWidth/Height and boundaryWidth/Height methods
+v0.0.1
+* fork `josefbehr/filament-croppie` and rename everything
