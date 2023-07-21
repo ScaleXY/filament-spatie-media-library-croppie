@@ -9,6 +9,8 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
 {
     protected string $view = 'filament-spatie-media-library-croppie::components.spatie-media-library-croppie';
 
+	protected string | Closure | null $backgroundColor = '#00ff00';
+
     protected string | Closure | null $viewportHeight = '400';
 
     protected string | Closure | null $viewportWidth = '400';
@@ -36,14 +38,12 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
         $this->acceptedFileTypes([
             "image/png"," image/gif","image/jpeg","image/webp"
         ]);
-
         return parent::getAcceptedFileTypes();
     }
 
     public function modalSize(string | Closure | null $modalSize): static
     {
         $this->modalSize = $modalSize;
-
         return $this;
     }
 
@@ -55,7 +55,6 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
     public function modalHeading(string | Closure | null $modalHeading): static
     {
         $this->modalHeading = $modalHeading;
-
         return $this;
     }
 
@@ -72,17 +71,13 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
     public function enableImageRotation(bool | Closure $condition = true): static
     {
         $this->isRightRotationEnabled = $condition;
-
         $this->isLeftRotationEnabled = $condition;
-
         return $this;
     }
 
     public function enableRightImageRotation(bool | Closure $condition = true): static
     {
-
         $this->isRightRotationEnabled = $condition;
-
         return $this;
     }
 
@@ -94,9 +89,7 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
 
     public function enableLeftImageRotation(bool | Closure $condition = true): static
     {
-
         $this->isLeftRotationEnabled = $condition;
-
         return $this;
     }
 
@@ -108,7 +101,6 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
     public function showZoomer(bool | Closure $condition = true): static
     {
         $this->showZoomer = $condition;
-
         return $this;
     }
 
@@ -120,7 +112,6 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
     public function viewportHeight(string | Closure | null $height): static
     {
         $this->viewportHeight = $height;
-
         return $this;
     }
 
@@ -132,7 +123,6 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
     public function viewportWidth(string | Closure | null $width): static
     {
         $this->viewportWidth = $width;
-
         return $this;
     }
 
@@ -144,7 +134,6 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
     public function boundaryHeight(string | Closure | null $height): static
     {
         $this->boundaryHeight = $height;
-
         return $this;
     }
 
@@ -156,7 +145,6 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
     public function boundaryWidth(string | Closure | null $width): static
     {
         $this->boundarywidth = $width;
-
         return $this;
     }
 
@@ -168,7 +156,6 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
     public function imageFormat(string | Closure $imageFormat = 'png'): static
     {
         $this->imageFormat = $imageFormat;
-
         return $this;
     }
 
@@ -180,7 +167,6 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
     public function imageQuality(float | Closure $imageQuality = 0.9): static
     {
         $this->imageQuality = $imageQuality;
-
         return $this;
     }
 

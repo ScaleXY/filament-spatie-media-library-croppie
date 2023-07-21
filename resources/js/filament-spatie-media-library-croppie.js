@@ -73,6 +73,7 @@ document.addEventListener('alpine:init', () => {
                 type: "blob",
                 size: "original",
                 format: this.filetype,
+				backgroundColor: '#000f21',
                 quality: 1
             }).then((croppedImage) => {
                 this.showCroppie = false
