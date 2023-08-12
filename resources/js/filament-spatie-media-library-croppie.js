@@ -55,8 +55,8 @@ document.addEventListener('alpine:init', () => {
                     enforceBoundary: false,
                     enableOrientation: true,
                     enableExif: true,
-                    format: this.format,
-                    quality: this.quality
+                    format: 'jpeg',
+                    quality: 0.8
                 })
         },
 
@@ -72,10 +72,10 @@ document.addEventListener('alpine:init', () => {
             this.croppie.result({
                 type: "blob",
                 size: "original",
-                format: this.filetype,
 				backgroundColor: '#122239',
 				// '#000f21',
-                quality: 0.8
+				format: 'jpeg',
+				quality: 0.8
             }).then((croppedImage) => {
                 this.showCroppie = false
                 this.hasImage = true
